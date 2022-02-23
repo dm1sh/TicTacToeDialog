@@ -7,7 +7,7 @@
 
 class CTicTacToeDlg : public CDialog, public TicTacToeGame {
 public:
-	CTicTacToeDlg() : CDialog(IDD_TIC_TAC_TOE_DIALOG, NULL) {};
+	CTicTacToeDlg() : CDialog(IDD_TIC_TAC_TOE_DIALOG) {};
 
 private:
 	void OnOK();

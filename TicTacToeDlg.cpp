@@ -50,6 +50,9 @@ void CTicTacToeDlg::OnBnClickedSquare(UINT nID)
 		UINT comp_id = findComputerMove();
 		playerMove(comp_id);
 		buttons[comp_id].SetWindowTextW(L"O");
+		buttons[comp_id].SetFocus();
+		buttons[btn_id].SetButtonStyle(BS_FLAT);
+		buttons[comp_id].SetButtonStyle(BS_DEFPUSHBUTTON);
 		
 		if (checkWin(SqState::O)) {
 			ended = TRUE;
